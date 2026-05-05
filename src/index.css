@@ -11,6 +11,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .logo-text-responsive {
+    font-size: 0.85rem !important;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

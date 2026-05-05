@@ -1,4 +1,4 @@
-export default function Logo({ variant = 'dark', size = 'md' }) {
+export default function Logo({ variant = 'dark', size = 'md', mobileTextSize }) {
   const textColor = variant === 'light' ? '#ffffff' : '#1a3d2b'
   const iconColor = '#006a89'
 
@@ -68,7 +68,7 @@ export default function Logo({ variant = 'dark', size = 'md' }) {
         />
       </svg>
       <div
-        className="leading-none whitespace-nowrap"
+        className={`leading-none whitespace-nowrap${mobileTextSize ? ' logo-text-responsive' : ''}`}
         style={{ color: textColor, fontWeight: 700, fontSize: size === 'sm' ? '0.875rem' : size === 'lg' ? '1.25rem' : '1.25rem' }}
       >
         Bridge to Shore Recovery Services
