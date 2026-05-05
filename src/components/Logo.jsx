@@ -5,7 +5,7 @@ export default function Logo({ variant = 'dark', size = 'md' }) {
   const iconW = size === 'sm' ? 38 : size === 'lg' ? 56 : 46
   const iconH = Math.round(iconW * 0.667)
   const textClass =
-    size === 'sm' ? 'text-xs' : size === 'lg' ? 'text-lg' : 'text-sm'
+    size === 'sm' ? 'text-sm' : size === 'lg' ? 'text-xl' : 'text-base'
 
   return (
     <div className="flex items-center gap-2.5 select-none">
@@ -68,11 +68,10 @@ export default function Logo({ variant = 'dark', size = 'md' }) {
         />
       </svg>
       <div
-        className={`font-bold leading-tight ${textClass}`}
-        style={{ color: textColor }}
+        className="leading-none whitespace-nowrap"
+        style={{ color: textColor, fontWeight: 700, fontSize: size === 'sm' ? '0.875rem' : size === 'lg' ? '1.25rem' : '1.25rem' }}
       >
-        <div>Bridge to Shore</div>
-        <div>Recovery Services</div>
+        Bridge to Shore Recovery Services
       </div>
     </div>
   )

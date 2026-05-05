@@ -154,7 +154,7 @@ export default function Home() {
             {CARDS.map((card, i) => (
               <ScrollAnimator key={card.title} delay={i * 130}>
                 <div className="bg-[#e8f2ec] rounded-2xl p-8 h-full hover:-translate-y-1 transition-transform duration-300 cursor-default">
-                  <div className="w-11 h-11 rounded-full bg-[#1a3d2b] flex items-center justify-center mb-5 text-white">
+                  <div className="w-11 h-11 rounded-full bg-[#e6f4f8] flex items-center justify-center mb-5 text-[#006a89]">
                     {card.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-[#1a3d2b] mb-3">{card.title}</h3>
