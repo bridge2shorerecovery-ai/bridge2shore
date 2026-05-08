@@ -70,14 +70,14 @@ export async function sendContactEmail({ name, organization, email, phone, inqui
 
   const [r1, r2] = await Promise.all([
     send({
-      from: 'onboarding@resend.dev',
+      from: 'info@bridge2shore.ca',
       to: email,
       subject: 'We received your message — Bridge to Shore Recovery Services',
       html: visitorHtml,
     }),
     send({
-      from: 'onboarding@resend.dev',
-      to: 'blytheroller4@gmail.com',
+      from: 'info@bridge2shore.ca',
+      to: 'info@bridge2shore.ca',
       subject: `New inquiry from website — ${name}`,
       html: adminHtml,
     }),
