@@ -10,6 +10,9 @@ const CERTS = [
   'Wellbriety Training',
   'Grief Walk Facilitation',
   'Addiction Care and Treatment',
+  'Trauma-Informed Practice Certification',
+  'ASSIST',
+  'Crisis Prevention and Intervention',
 ]
 
 const DIFFERENTIATORS = [
