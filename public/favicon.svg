@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" fill="white"/>
+  <!-- Deck -->
+  <line x1="4" y1="42" x2="60" y2="42" stroke="#006a89" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left tower -->
+  <line x1="16" y1="20" x2="16" y2="44" stroke="#006a89" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right tower -->
+  <line x1="48" y1="20" x2="48" y2="44" stroke="#006a89" stroke-width="3" stroke-linecap="round"/>
+  <!-- Main cables left arc -->
+  <path d="M4,42 Q16,18 32,22 Q48,18 60,42" fill="none" stroke="#006a89" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Hangers left span -->
+  <line x1="22" y1="21" x2="22" y2="42" stroke="#006a89" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="28" y1="22" x2="28" y2="42" stroke="#006a89" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Hangers right span -->
+  <line x1="36" y1="22" x2="36" y2="42" stroke="#006a89" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="42" y1="21" x2="42" y2="42" stroke="#006a89" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Approach roads -->
+  <line x1="4" y1="42" x2="4" y2="44" stroke="#006a89" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="42" x2="60" y2="44" stroke="#006a89" stroke-width="3" stroke-linecap="round"/>
+</svg>
