@@ -84,8 +84,14 @@ export async function sendContactEmail({ name, organization, email, phone, inqui
   ])
 
   if (!r1.ok || !r2.ok) {
-    const err = await (r1.ok ? r2 : r1).json().catch(() => ({}))
-    throw new Error(err.message || 'Failed to send email')
+    const failed = r1.ok ? r2 : r1
+    const status = failed.status
+    const body = await failed.text().catch(() => '(could not read body)')
+    console.error('Resend API error — status:', status)
+    console.error('Resend API error — body:', body)
+    let parsed = {}
+    try { parsed = JSON.parse(body) } catch (_) {}
+    throw new Error(parsed.message || `Failed to send email (status ${status})`)
   }
 
   return { success: true }
