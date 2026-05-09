@@ -66,7 +66,7 @@ const CARDS = [
 export default function Home() {
   const statsRef = useRef(null)
   const [years, triggerYears] = useCountUp(12)
-  const [modalities, triggerModalities] = useCountUp(5)
+  const [modalities, triggerModalities] = useCountUp(8)
   const [partners, triggerPartners] = useCountUp(2)
 
   useEffect(() => {
