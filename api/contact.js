@@ -84,6 +84,7 @@ export default async function handler(req, res) {
       send({
         from: 'info@bridge2shore.ca',
         to: 'info@bridge2shore.ca',
+        reply_to: email,
         subject: `New inquiry from website — ${name}`,
         html: adminHtml,
       }),
