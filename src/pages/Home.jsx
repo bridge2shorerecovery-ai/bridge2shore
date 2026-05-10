@@ -166,6 +166,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="py-24" style={{ backgroundColor: '#e8f2ec' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimator className="text-center mb-14">
+            <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#006a89' }}>Testimonials</p>
+            <h2 className="text-3xl sm:text-4xl font-bold" style={{ color: '#1a3d2b' }}>What people are saying</h2>
+          </ScrollAnimator>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <ScrollAnimator delay={0}>
+              <div className="bg-white rounded-2xl p-8 h-full" style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.07)' }}>
+                <div className="text-6xl font-serif leading-none mb-4" style={{ color: '#006a89' }}>&ldquo;</div>
+                <p className="text-gray-700 leading-relaxed text-sm mb-6">After eight treatment centers, I truly believed I was beyond help. Hopeless. I completed programs, followed rules, and tried everything people told me to do, but I could never stay sober. I was a heroin addict who had completely lost hope. Before meeting Dave and Blythe, I honestly believed I would die an addict. I remember thinking that I would give recovery one last shot, and if it didn&rsquo;t work, I was going back to using. What made Dave and Blythe different was that they didn&rsquo;t just hand me a Big Book and tell me to read it. They sat down with me, read it with me, and taught me how to actually study and understand it. They took me through the steps the original way they were meant to be done. They gave me real step work, held me accountable, checked on me consistently, and pushed me to grow even when I didn&rsquo;t want to. For the first time in my life, I finally understood that the Big Book wasn&rsquo;t just words on a page, it was a solution. Because of Dave and Blythe, my entire life changed. Today I have over two and a half years clean, a relationship with my family again, my own home, and the ability to be present and care for my son. But more importantly, they helped me realize that I wasn&rsquo;t a bad person. I was a person struggling with addiction who needed guidance, honesty, and a real solution. They helped me find peace, purpose, and a new way to live. Today my purpose is to help other addicts the same way they helped me, not my way, but the way the Big Book teaches us. Dave and Blythe didn&rsquo;t just help me get sober, they helped give me my life back.</p>
+                <p className="font-bold" style={{ color: '#1a3d2b' }}>Michawn</p>
+              </div>
+            </ScrollAnimator>
+            <ScrollAnimator delay={130}>
+              <div className="bg-white rounded-2xl p-8 h-full" style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.07)' }}>
+                <div className="text-6xl font-serif leading-none mb-4" style={{ color: '#006a89' }}>&ldquo;</div>
+                <p className="text-gray-700 leading-relaxed text-sm mb-6">Working with Dave and Blythe has changed my life. They brought the Big Book to life in a way that made it much easier to understand and relate to, especially by taking the time to explain words and phrases that aren&rsquo;t commonly used anymore. If you&rsquo;re willing to put in the work, they&rsquo;ll go the extra mile to help you. They&rsquo;re both great guys who truly know what they&rsquo;re doing, and I have a lot of faith in them. My life has changed drastically for the better since working the steps with them. I put in the work, but they made the process easier and helped give me the tools I need moving forward.</p>
+                <p className="font-bold" style={{ color: '#1a3d2b' }}>Brad</p>
+              </div>
+            </ScrollAnimator>
+          </div>
+        </div>
+      </section>
+
       {/* Who We Work With */}
       <section className="bg-[#1a3d2b] py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
